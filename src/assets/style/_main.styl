@@ -1,0 +1,48 @@
+activeStar=rgba(236, 165, 57, 1)
+pressedButton=rgba(192, 14, 32, 1)
+normalButton=rgba(242, 37, 57, 1)
+normalText=rgba(53, 53, 53, 1)
+messageColor=rgba(191, 191, 191, 1)
+disabledcolor=rgba(232, 232, 232, 1)
+viewsBackground=#E5E5E5
+inputsBackground=rgba(245, 245, 245, 1)
+modalBackground=rgba(249, 249, 249, 1)
+radioButton=60px
+radioInput=5px
+inputFontSize=16px
+listFontSize=22px
+buttonFontSize=18px
+titleFontSize=26px
+alertFontSize=36px
+messageFontSize=20px
+
+mixin-buttons(width=131px, height=44px, background=normalButton)
+  width width
+  height height
+  background-color background
+  display grid
+  place-items center
+  max-width max-content
+  border-radius radioButton
+  padding 0 15px
+  color white
+  cursor pointer
+
+mixin-fav-button(start=disabledcolor, long=44px)
+  display grid
+  place-item center
+
+mixin-input()
+  display grid
+  grid-template-columns 50px minmax(265px, 570px)
+  grid-template-rows 50px
+  height 50px
+  max-width 570px
+  box-shadow 0 2px 10px 0 rgba(0,0,0,0.04)
+  background-color inputsBackground
+  border-radius radioInput
+
+
+
+
+
